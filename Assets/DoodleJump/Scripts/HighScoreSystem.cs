@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 namespace doodleJump
 {
+    // Called in Game to Submit highscore
     public class HighScoreSystem : MonoBehaviour
     {
         public HighScore myScore;
@@ -26,6 +27,7 @@ namespace doodleJump
         {
             myName = s;
         }
+
         public void SubmitScore()
         {
             PlayerHS _PlayerHS = new PlayerHS();

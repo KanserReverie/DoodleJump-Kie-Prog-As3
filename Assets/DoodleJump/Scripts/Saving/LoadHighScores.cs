@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
+using System;
 
 namespace doodleJump
 {
@@ -19,7 +20,7 @@ namespace doodleJump
             highScoreList = SaveSystem.LoadHighScoreList();
             lastScore = SaveSystem.LoadPlayer();
 
-            highScoreList.myHighScoreList.OrderBy(PlayerData => PlayerData.PlayerScore);
+            highScoreList.myHighScoreList.Sort();
             for (int i = 0; i < highScoreList.myHighScoreList.Count && i < 10; i++)
             {
                 displayHighScores.text = (displayHighScores.text + highScoreList.myHighScoreList[i].PlayerName +" " + highScoreList.myHighScoreList[i].PlayerScore.ToString("F1") + "\n");

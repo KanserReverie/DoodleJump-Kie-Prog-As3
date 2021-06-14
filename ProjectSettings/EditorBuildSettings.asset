@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/DoodleJump/Scenes/MainGame.unity
     guid: 34ee64ce60f47744093c71b16f25d1f4
+  - enabled: 1
+    path: Assets/DoodleJump/Scenes/WinScene.unity
+    guid: 9a466987cda888547bf48b8769506af3
   m_configObjects: {}

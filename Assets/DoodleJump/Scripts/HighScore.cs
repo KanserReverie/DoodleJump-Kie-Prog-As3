@@ -17,16 +17,13 @@ namespace doodleJump
             myHighScore = 0;
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
+        // Just increases depending on time.
+        // Your score is how long it takes for you to hit the end
 
         void LateUpdate()
         {
             myHighScore += Time.deltaTime;
-            myHighScoreText.text = myHighScore.ToString("F0");
+            myHighScoreText.text = myHighScore.ToString("F1");
         }
     }
 }

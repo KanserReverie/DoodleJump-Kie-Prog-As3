@@ -12,6 +12,7 @@ namespace doodleJump
         private Rigidbody2D myrb;
         public GameObject GameOver;
         public GameObject WinMenu;
+        public GameObject Menu;
         // Start is called before the first frame update
         void Start()
         {
@@ -33,7 +34,6 @@ namespace doodleJump
         }
         private void OnCollisionEnter2D(Collision2D collision)
         {
-            print("collision");
             if (collision.gameObject.tag == "Lose")
             {
                 GameOver.gameObject.SetActive(true);
@@ -41,6 +41,7 @@ namespace doodleJump
             }
             else if (collision.gameObject.tag == "Finish")
             {
+                Menu.SetActive(false);
                 Time.timeScale = 0;
                 WinMenu.gameObject.SetActive(true);
             }

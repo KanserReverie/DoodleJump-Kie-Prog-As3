@@ -7,6 +7,7 @@ namespace doodleJump
 {
     public class MainMenu : MonoBehaviour
     {
+        public GameObject SettingsPannel;
         public void QuitButton()
         {
             Time.timeScale = 1;
@@ -19,6 +20,17 @@ namespace doodleJump
         {
             Time.timeScale = 1;
             SceneManager.LoadScene(1);
+        }
+        public void Retry()
+        {
+            Time.timeScale = 1;
+            Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
+        }
+
+        public void OpenSettings()
+        {
+            Time.timeScale = 0;
+            SettingsPannel.SetActive(true);
         }
     }
 }

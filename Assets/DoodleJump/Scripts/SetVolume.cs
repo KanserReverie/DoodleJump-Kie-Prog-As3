@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 
+// All just using the same NameSpace this project.
 namespace doodleJump
 {
     public class SetVolume : MonoBehaviour

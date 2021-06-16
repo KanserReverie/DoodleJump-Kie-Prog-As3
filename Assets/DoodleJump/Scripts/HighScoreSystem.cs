@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+// All just using the same NameSpace this project.
 namespace doodleJump
 {
     // Called in Game to Submit highscore

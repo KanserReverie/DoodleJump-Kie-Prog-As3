@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+// All just using the same NameSpace this project.
 namespace doodleJump
 {
     public class HighScore : MonoBehaviour

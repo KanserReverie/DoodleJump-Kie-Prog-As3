@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// All just using the same NameSpace this project.
 namespace doodleJump
 {
 	public class Camera : MonoBehaviour

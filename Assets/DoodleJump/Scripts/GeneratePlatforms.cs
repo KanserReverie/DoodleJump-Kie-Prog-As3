@@ -24,10 +24,14 @@ namespace doodleJump
 			// Makes a new Vector 3 as spawnPosition.
 			Vector3 spawnPosition = new Vector3();
 
+			// Loops through = to how many platforms there are.
 			for (int i = 0; i < numberOfPlatforms; i++)
 			{
+				// Gets a random "Y" from above and adds to current instattiation..
 				spawnPosition.y += Random.Range(minY, maxY);
+				// Gets width besed on level width.
 				spawnPosition.x = Random.Range(-levelWidth, levelWidth);
+				// Makes a platform at that position.
 				Instantiate(platformPrefab, spawnPosition, Quaternion.identity);
 			}
 		}
